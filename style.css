@@ -1,0 +1,189 @@
+body {
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    padding-top: 100px;
+    height: 100%;
+    background: hsl(204, 43%, 93%);
+    overflow: hidden;
+}
+
+.quadrado-principal {
+    width: 635px;
+    height: 475px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.introducao {
+    padding: 2.5em;
+}
+
+.texto-introducao {
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.subtitulo {
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: hsl(71, 73%, 54%);
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(218, 22%, 67%);
+    line-height: 1.6;
+}
+
+.painel-inferior {
+    position: relative;
+}
+
+.painel-inferior__esquerdo {
+    position: absolute;
+    left: 0px;
+    width: 50%;
+    background: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+}
+
+.painel-inferior__direito {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    background: hsl(179, 46%, 56%);
+    border-bottom-right-radius: 10px;
+}
+
+/*month*/
+
+.inscricao {
+    padding: 2.5em;
+    height: 188px;
+}
+
+.texto-inscricao {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 0.6em;
+}
+
+.valor-mes {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-right: 7px;
+}
+
+.mes {
+    color: hsl(179, 55%, 64%);
+    font-size: 16px;
+    text-align: center;
+}
+
+.descricao-mes {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1.7em;
+}
+
+/* sign up*/
+
+.inscrever {
+    width: 50%;
+    padding: 1rem;
+    padding-left: 40%;
+    padding-right: 60%;
+    background: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: -9px 8px 8px hsl(179, 40%, 45%);
+    font-family: 'Karla', sans-serif;
+}
+
+.inscrever:hover {
+    background: hsl(71, 87%, 50%);
+    transform: scale(1.1);
+}
+.inscrever:focus {
+    outline: none;
+}
+
+/* why us */
+
+.sobrenos {
+    padding: 2.5em;
+    height: 188px;
+}
+
+.titulo-sobrenos {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.lista-sobrenos {
+    margin-bottom: 10px;
+}
+
+.itens {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(216, 23%, 91%);
+    margin-bottom: 0.4rem;
+}
+
+/* mobile*/
+
+@media screen and (max-width: 600px) {
+    main {
+        padding-top: 0;
+        overflow-y: scroll;
+    }
+    .quadrado-principal {
+        width: calc(100% - 3em);
+        margin: 1.5em; 
+        height: auto;
+    }
+    .painel-inferior {
+        height: 550px;
+    }
+    .painel-inferior__direito {
+        width: 100%;
+        top: 50%;
+        left: 0;
+        height: 50%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius:x 10px ;
+
+    }
+    .painel-inferior__esquerdo {
+        width: 100%;
+        right: 0;
+        top: 0;
+        left: auto;
+        height: 50%;
+        border-radius: 0;
+    }
+    .inscricao{
+    
+}
+}
